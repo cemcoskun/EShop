@@ -16,9 +16,20 @@ UI layer types
 * ViewModels
 * Startup
 
-==Packages==
+== Packages ==
 Application Core
 
 Infrastructure
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.AspNetCore.Identity
+Install-Package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+Add-Migration InitialIdentityModel -context AppIdentityDbContext -OutputDir "Identity/Migrations"
+Update-Database -context AppIdentityDbContext
+
+Add-Migration Initial -context ShopContext -OutputDir "Data/Migrations"
+Remove-Migration -context ShopContext -OutputDir "Data/Migrations"
+Update-Database -context ShopContext
 
 UI layer

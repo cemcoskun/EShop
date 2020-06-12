@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Infrastructure.Data.Config
 {
-    class BrandConfiguration : IEntityTypeConfiguration<Brand>
+    public class BrandConfiguration : IEntityTypeConfiguration<Brand>
     {
         public void Configure(EntityTypeBuilder<Brand> builder)
         {

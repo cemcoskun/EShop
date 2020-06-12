@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Infrastructure.Data.Config
 {
-    class CategoryConfiguration : IEntityTypeConfiguration<Category>
+    public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {
