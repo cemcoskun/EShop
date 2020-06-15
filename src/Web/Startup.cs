@@ -14,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using Infrastructure.Identity;
 using Infrastructure.Data;
 using ApplicationCore.Interfaces;
+using Web.Interfaces;
+using Web.Services;
 
 namespace Web
 {
@@ -40,6 +42,7 @@ namespace Web
                 .AddDefaultTokenProviders();
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
+            services.AddScoped<IHomeIndexViewModelService, HomeIndexViewModelService>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();

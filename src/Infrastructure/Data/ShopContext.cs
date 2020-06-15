@@ -21,7 +21,7 @@ namespace Infrastructure.Data
             base.OnModelCreating(modelBuilder);
 
             // https://www.learnentityframeworkcore.com/configuration/fluent-api
-           // modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            //modelBuilder.ApplyConfiguration(new CategoryConfiguration());
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
