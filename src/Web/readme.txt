@@ -1,4 +1,6 @@
-﻿Application Core types
+﻿
+
+Application Core types
 * Entities (business model classes that are persisted)
 * Interfaces
 * Services
