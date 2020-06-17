@@ -32,7 +32,6 @@ Add-Migration InitialIdentityModel -context AppIdentityDbContext -OutputDir "Ide
 Update-Database -context AppIdentityDbContext
 
 Add-Migration Initial -context ShopContext -OutputDir "Data/Migrations"
-Remove-Migration -context ShopContext -OutputDir "Data/Migrations"
 Update-Database -context ShopContext
 
 UI layer

@@ -11,6 +11,8 @@
     <Compile Remove="Data\Migrations\20200612175417_Initial.Designer.cs" />
     <Compile Remove="Data\Migrations\20200612175815_Initial.cs" />
     <Compile Remove="Data\Migrations\20200612175815_Initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200617160355_AddTableBasket.cs" />
+    <Compile Remove="Data\Migrations\20200617160355_AddTableBasket.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
